@@ -121,7 +121,6 @@ a {
 }
 
 .button-create:hover {
-  color: #581919;
   cursor: pointer;
 }
 
@@ -161,7 +160,6 @@ a {
   flex-direction: column;
   gap: 10px;
 }
-
 
 #edit-character {
   display: none;
@@ -206,4 +204,99 @@ a {
 
 #character-section {
   display: none;
+}
+
+#popup {
+  display: none;
+}
+.popup-container {
+  align-items: center;
+  background-color: #fff9;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.avatar-popup {
+  align-items: center;
+  background-color: #a2a0a0;
+  border: 1px solid white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  padding: 40px 10px 10px;
+  position: relative;
+  width: 50%;
+}
+.close-modal:hover {
+  cursor: pointer;
+}
+.close-modal {
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.avatar-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+.avatar-item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.avatar-item {
+  height: 200px;
+  position: relative;
+  width: 150px;
+}
+
+.avatar-edit {
+  display: none;
+}
+
+.avatar-edit {
+  align-items: center;
+  background-color: #00000080;
+  bottom: 0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.avatar-edit-btn {
+  border: none;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.avatar-edit-btn img {
+  height: 24px;
+  width: 24px;
 }

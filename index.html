@@ -46,11 +46,12 @@
             <div class="character-container">
                 <div class="character-info">
                     <div class="avatar-image">
-                        <img id="image-character" src="https://turn-them-all-down.vercel.app/assets/avatars/default.jpg"
+                        <img id="image-character" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7q_o5-hbH4-K9xLQAretQQIFB_onrALKW-w&s"
                             alt="default avatar" onmouseenter="editCharacter()" onmouseout="closeEditCharacter()">
                         <div id="edit-character" class="edit-character">
                             <button class="edit-character-btn" onclick="openEditModal()">
-                                <img src="https://turn-them-all-down.vercel.app/assets/icons/edit.svg" alt="edit character">
+                                <img src="https://turn-them-all-down.vercel.app/assets/icons/edit.svg"
+                                    alt="edit character">
                             </button>
                         </div>
                     </div>
@@ -66,11 +67,63 @@
         </div>
     </header>
 
+    <div id="popup" class="popup-container">
+        <div class="avatar-popup">
+            <img class="close-modal" src="https://turn-them-all-down.vercel.app/assets/icons/close.svg"
+                alt="close modal" onclick="closeModal()">
+            <div class="avatar-content">
+                <div class="avatar-item">
+                    <img onmouseenter="chooseAvatar(this)" onmouseleave="closeChooseAvatar(this)"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7q_o5-hbH4-K9xLQAretQQIFB_onrALKW-w&s"
+                        alt="character1" class="choose-image-avatar">
+                    <div class="avatar-edit">
+                        <button class="avatar-edit-btn" onclick="setAvatar(this)">
+                            <img src="https://turn-them-all-down.vercel.app/assets/icons/check_circle.svg"
+                                alt="choose avatar" >
+                        </button>
+                    </div>
+                </div>
+                <div class="avatar-item">
+                    <img onmouseenter="chooseAvatar(this)" onmouseleave="closeChooseAvatar(this)"
+                        src="https://png.klev.club/uploads/posts/2024-04/png-klev-club-w56p-p-personazhi-igr-png-25.png"
+                        alt="character2" class="choose-image-avatar">
+                    <div class="avatar-edit">
+                        <button class="avatar-edit-btn" onclick="setAvatar(this)">
+                            <img src="https://turn-them-all-down.vercel.app/assets/icons/check_circle.svg"
+                                alt="choose avatar" >
+                        </button>
+                    </div>
+                </div>
+                <div class="avatar-item">
+                    <img onmouseenter="chooseAvatar(this)" onmouseleave="closeChooseAvatar(this)"
+                        src="https://png.klev.club/uploads/posts/2024-04/png-klev-club-vx0z-p-personazhi-igr-png-15.png"
+                        alt="character3" class="choose-image-avatar">
+                    <div class="avatar-edit">
+                        <button class="avatar-edit-btn" onclick="setAvatar(this)">
+                            <img src="https://turn-them-all-down.vercel.app/assets/icons/check_circle.svg"
+                                alt="choose avatar" >
+                        </button>
+                    </div>
+                </div>
+                <div class="avatar-item">
+                    <img onmouseenter="chooseAvatar(this)" onmouseleave="closeChooseAvatar(this)"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu1uwdXi_Kd0RipQKySWl6a0p5rNH82m1zRy360AkWoULXy0EyubCZDK65-4SSvxBj_Wc&usqp=CAU"
+                        alt="character4" class="choose-image-avatar">
+                    <div class="avatar-edit">
+                        <button class="avatar-edit-btn" onclick="setAvatar(this)">
+                            <img src="https://turn-them-all-down.vercel.app/assets/icons/check_circle.svg"
+                                alt="choose avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="register" id="create-section">
         <div class="register__name">Create Your Character</div>
         <div class="input">
             <label for="character-name">Character Name</label>
-            <input class="input-name"  type="text" name="name" value="" id="character-name">
+            <input class="input-name" type="text" name="name" value="" id="character-name">
         </div>
         <button class="button-create" id="btn-create" onclick="toFight()">Create Character</button>
     </div>
