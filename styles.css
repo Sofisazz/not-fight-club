@@ -3,6 +3,86 @@ body {
   padding: 0;
 }
 
+
+header {
+  height: 100vh;
+  line-height: 15px;
+  font-size: 15px;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+}
+.tool-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-shrink: 0;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+}
+.main {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+}
+.main a{
+  text-decoration: none;
+  color: #000;
+}
+
+.tool-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+.tool-bar img,
+a {
+  height: 20px;
+  width: 20px;
+}
+.div-fight {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fight-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.fight {
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+
+
+
+
+
+
 .register {
   display: flex;
   justify-content: center;
