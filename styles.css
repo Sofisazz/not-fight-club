@@ -124,3 +124,56 @@ a {
   color: #581919;
   cursor: pointer;
 }
+
+/*-------- character section ---------*/
+
+.character-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+}
+
+.character-info {
+  display: flex;
+  gap: 30px;
+}
+
+.avatar-image {
+  border: 1px solid grey;
+  border-radius: 15px;
+  height: 350px;
+  width: 300px;
+}
+
+.avatar-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.avatar-data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.avatar-result {
+  display: flex;
+  gap: 10px;
+}
+
+.avatar-result-wins {
+  color: #008000;
+}
+
+.avatar-result-loses {
+  color: #ff0000;
+}
+
+#character-section {
+  display: none;
+}
