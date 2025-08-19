@@ -1,4 +1,49 @@
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.register__name {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+.character-name {
+  font-size: 16px;
+}
+
+.input-name {
+  box-sizing: border-box;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  padding: 5px;
+  width: 206px;
+  height: 30px;
+}
+.button-create {
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.button-create:hover {
+  color: #581919;
+  cursor: pointer;
 }
