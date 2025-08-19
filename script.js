@@ -12,4 +12,7 @@ function toFight(){
 function toCharacter(){
     fight_section.style.display='none';
     character_section.style.display='block';
+
+    let name_character = document.getElementById('character-name');
+    document.getElementById('avatar-name').innerText = name_character.value;
 }
