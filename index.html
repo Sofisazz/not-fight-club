@@ -46,8 +46,13 @@
             <div class="character-container">
                 <div class="character-info">
                     <div class="avatar-image">
-                        <img src="https://turn-them-all-down.vercel.app/assets/avatars/default.jpg"
-                            alt="default avatar">
+                        <img id="image-character" src="https://turn-them-all-down.vercel.app/assets/avatars/default.jpg"
+                            alt="default avatar" onmouseenter="editCharacter()" onmouseout="closeEditCharacter()">
+                        <div id="edit-character" class="edit-character">
+                            <button class="edit-character-btn" onclick="openEditModal()">
+                                <img src="https://turn-them-all-down.vercel.app/assets/icons/edit.svg" alt="edit character">
+                            </button>
+                        </div>
                     </div>
                     <div class="avatar-data">
                         <div class="avatar-data-name" id="avatar-name"></div>

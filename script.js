@@ -16,3 +16,14 @@ function toCharacter(){
     let name_character = document.getElementById('character-name');
     document.getElementById('avatar-name').innerText = name_character.value;
 }
+
+function editCharacter(){
+    let edit=document.getElementById('edit-character');
+    edit.style.display='flex';
+}
+
+function closeEditCharacter(){
+    let edit=document.getElementById('edit-character');
+    edit.style.display='none';
+    
+}
