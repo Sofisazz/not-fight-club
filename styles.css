@@ -300,3 +300,57 @@ a {
   height: 24px;
   width: 24px;
 }
+
+/*-------------- settings ---------------------*/
+
+#settings-section {
+  display: none;
+}
+
+.change-name-container {
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+}
+
+.change-name {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-name-btn {
+  font-size: 10px;
+  padding: 5px 10px;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+#input-name-avatar {
+  display: none;
+}
+
+.input-name-avatar {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.input-name-avatar input {
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+.btn-save {
+  font-size: 10px;
+  padding: 5px 10px;
+}
