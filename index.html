@@ -18,8 +18,8 @@
                     <a href="#"><img src="https://turn-them-all-down.vercel.app/assets/icons/home.svg" alt="Home"></a>
                     <a href="#" onclick="toCharacter()"><img
                             src="https://turn-them-all-down.vercel.app/assets/icons/character.svg" alt="user"></a>
-                    <a href="#"><img src="https://turn-them-all-down.vercel.app/assets/icons/settings.svg"
-                            alt="settings"></a>
+                    <a href="#" onclick="toSettings()"><img
+                            src="https://turn-them-all-down.vercel.app/assets/icons/settings.svg" alt="settings"></a>
                 </div>
             </div>
             <div class="fight-container">
@@ -39,8 +39,8 @@
                             src="https://turn-them-all-down.vercel.app/assets/icons/home.svg" alt="Home"></a>
                     <a href="#"><img src="https://turn-them-all-down.vercel.app/assets/icons/character.svg"
                             alt="user"></a>
-                    <a href="#"><img src="https://turn-them-all-down.vercel.app/assets/icons/settings.svg"
-                            alt="settings"></a>
+                    <a href="#" onclick="toSettings()"><img
+                            src="https://turn-them-all-down.vercel.app/assets/icons/settings.svg" alt="settings"></a>
                 </div>
             </div>
             <div class="character-container">
@@ -64,6 +64,37 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </header>
+
+
+    <header id="settings-section">
+        <div class="container">
+            <div class="tool-bar-container">
+                <div class="main"><a href="#">Settings</a></div>
+                <div class="tool-bar">
+                    <a href="#" onclick="toFight()"><img
+                            src="https://turn-them-all-down.vercel.app/assets/icons/home.svg" alt="Home"></a>
+                    <a href="#" onclick="toCharacter()"><img
+                            src="https://turn-them-all-down.vercel.app/assets/icons/character.svg" alt="user"></a>
+                    <a href="#"><img src="https://turn-them-all-down.vercel.app/assets/icons/settings.svg"
+                            alt="settings"></a>
+                </div>
+            </div>
+            <div class="change-name-container">
+                <div class="change-name" id="change-name">
+                    <span class="name">
+                        Player Name:
+                    </span>
+                    <span id="name-for-avatar"></span>
+                    <button class="edit-name-btn" onclick="editNameAvatar()">Edit</button>
+                    <div class="input-name-avatar" id="input-name-avatar">
+                        <input type="text" name="name" id="input-name">
+                        <button class="edit-name-btn btn-save" onclick="saveNameAvatar()">Save</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
@@ -124,9 +155,9 @@
         <div class="register__name">Create Your Character</div>
         <div class="input">
             <label for="character-name">Character Name</label>
-            <input class="input-name" type="text" name="name" value="" id="character-name">
+            <input class="input-name" type="text" name="name" value="" id="character-name" required>
         </div>
-        <button class="button-create" id="btn-create" onclick="toFight()">Create Character</button>
+        <button  class="button-create" id="btn-create" onclick="toFight()">Create Character</button>
     </div>
 
     <div id="battle-section">
