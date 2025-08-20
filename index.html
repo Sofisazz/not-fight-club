@@ -24,7 +24,7 @@
             </div>
             <div class="fight-container">
                 <div class="div-fight">
-                    <button class="fight">Fight!</button>
+                    <button class="fight" onclick="toBattle()">Fight!</button>
                 </div>
             </div>
         </div>
@@ -46,7 +46,8 @@
             <div class="character-container">
                 <div class="character-info">
                     <div class="avatar-image">
-                        <img id="image-character" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7q_o5-hbH4-K9xLQAretQQIFB_onrALKW-w&s"
+                        <img id="image-character"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7q_o5-hbH4-K9xLQAretQQIFB_onrALKW-w&s"
                             alt="default avatar" onmouseenter="editCharacter()" onmouseout="closeEditCharacter()">
                         <div id="edit-character" class="edit-character">
                             <button class="edit-character-btn" onclick="openEditModal()">
@@ -79,7 +80,7 @@
                     <div class="avatar-edit">
                         <button class="avatar-edit-btn" onclick="setAvatar(this)">
                             <img src="https://turn-them-all-down.vercel.app/assets/icons/check_circle.svg"
-                                alt="choose avatar" >
+                                alt="choose avatar">
                         </button>
                     </div>
                 </div>
@@ -90,7 +91,7 @@
                     <div class="avatar-edit">
                         <button class="avatar-edit-btn" onclick="setAvatar(this)">
                             <img src="https://turn-them-all-down.vercel.app/assets/icons/check_circle.svg"
-                                alt="choose avatar" >
+                                alt="choose avatar">
                         </button>
                     </div>
                 </div>
@@ -101,7 +102,7 @@
                     <div class="avatar-edit">
                         <button class="avatar-edit-btn" onclick="setAvatar(this)">
                             <img src="https://turn-them-all-down.vercel.app/assets/icons/check_circle.svg"
-                                alt="choose avatar" >
+                                alt="choose avatar">
                         </button>
                     </div>
                 </div>
@@ -126,6 +127,107 @@
             <input class="input-name" type="text" name="name" value="" id="character-name">
         </div>
         <button class="button-create" id="btn-create" onclick="toFight()">Create Character</button>
+    </div>
+
+    <div id="battle-section">
+        <div class="container">
+            <div class="tool-bar-container">
+                <div class="main"><a href="#">Battle</a></div>
+                <div class="tool-bar">
+                    <a href="#" onclick="toFight()"><img
+                            src="https://turn-them-all-down.vercel.app/assets/icons/home.svg" alt="Home"></a>
+                    <a href="#" onclick="toCharacter()"><img
+                            src="https://turn-them-all-down.vercel.app/assets/icons/character.svg" alt="user"></a>
+                    <a href="#" onclick="toSettings()"><img
+                            src="https://turn-them-all-down.vercel.app/assets/icons/settings.svg" alt="settings"></a>
+                </div>
+            </div>
+            <div class="battle-container">
+                <div class="battle-info">
+                    <div class="battle-item">
+                        <p class="battle-item-name battle-my-name" id="battle-my-name"></p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7q_o5-hbH4-K9xLQAretQQIFB_onrALKW-w&s"
+                            alt="my avatar" class="battle-item-image my-avatar" id="image-avatar">
+                        <div class="health-container">
+                            <progress class="progress-bar progress-my-avatar"></progress>
+                            <p class="healt-bar bar-my-avatar"></p>
+                        </div>
+                    </div>
+                    <div class="battle-controls">
+                        <p>Please pick 1 Attack zone and 2 Defence zones</p>
+                        <div class="zones">
+                            <div class="attack-zones">
+                                <p>Attack Zones</p>
+                                <div class="checkbox-container">
+                                    <label for="check-head">Head</label>
+                                    <input type="radio" name="head" id="check-head">
+                                </div>
+                                <div class="checkbox-container">
+                                    <label for="check-neck">Neck</label>
+                                    <input type="radio" name="neck" id="check-neck">
+                                </div>
+                                <div class="checkbox-container">
+                                    <label for="check-body">Body</label>
+                                    <input type="radio" name="body" id="check-body">
+                                </div>
+                                <div class="checkbox-container">
+                                    <label for="check-belly">Belly</label>
+                                    <input type="radio" name="belly" id="check-belly">
+                                </div>
+                                <div class="checkbox-container">
+                                    <label for="check-legs">Legs</label>
+                                    <input type="radio" name="legs" id="check-legs">
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+                            <div class="defence-zones">
+                                <p>Defence Zones</p>
+                                <div class="checkbox-container">
+                                    <input type="radio" name="head-enemy" id="check-head">
+                                    <label for="check-head">Head</label>
+
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="radio" name="neck-enemy" id="check-neck">
+                                    <label for="check-neck">Neck</label>
+
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="radio" name="body-enemy" id="check-body">
+                                    <label for="check-body">Body</label>
+
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="radio" name="belly-enemy" id="check-belly">
+                                    <label for="check-belly">Belly</label>
+
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="radio" name="legs-enemy" id="check-legs">
+                                    <label for="check-legs">Legs</label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-attack">Attack!</button>
+                    </div>
+                    <div class="battle-item">
+                        <p class="battle-item-name">Spacemarine</p>
+                        <img src="https://grizly.club/uploads/posts/2023-08/1691945063_grizly-club-p-kartinki-personazhi-pabg-bez-fona-9.png"
+                            alt="enemy" class="battle-item-image enemy">
+                        <div class="health-container">
+                            <progress class="progress-bar progress-enemy"></progress>
+                            <p class="healt-bar bar-enemy"></p>
+                        </div>
+                    </div>
+                </div>
+           <div class="battle-logs">
+
+           </div>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
 
     <script src="script.js"></script>
