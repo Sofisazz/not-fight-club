@@ -3,6 +3,7 @@ let create_section=document.getElementById('create-section');
 let character_section=document.getElementById('character-section');
 let settings_section=document.getElementById('settings-section');
 let btn_create=document.getElementById('btn-create');
+let battle_section=document.getElementById('battle-section');
 
 function toFight(){
     let name_character = document.getElementById('character-name');
@@ -11,6 +12,7 @@ function toFight(){
     fight_section.style.display='block';
     create_section.style.display='none';
     character_section.style.display='none';
+    battle_section.style.display='none'
     settings_section.style.display='none';
 } else alert('Write Character Name');
     }
@@ -18,6 +20,7 @@ function toFight(){
 function toCharacter(){
     fight_section.style.display='none';
     character_section.style.display='block';
+    battle_section.style.display='none'
     settings_section.style.display='none';
 
     let name_character = document.getElementById('character-name');
@@ -65,7 +68,21 @@ function closeModal(){
 
         let popup = document.getElementById('popup');
         popup.style.display = 'none'; 
-    }
+}
+
+    function toBattle(){
+    let battle_my_name=document.getElementById('battle-my-name');
+    let name_character = document.getElementById('character-name');
+    let image_character = document.getElementById('image-character');
+    document.getElementById('image-avatar').src = image_character.src;
+
+    battle_my_name.innerText = name_character.value;
+
+    fight_section.style.display='none';
+    create_section.style.display='none';
+    character_section.style.display='none';
+    battle_section.style.display='block';
+}
 
     function toSettings(){
         let settings = document.getElementById('settings-section');
@@ -100,4 +117,3 @@ function closeModal(){
         input_name_avatar.style.display='none';
         edit_btn.style.display='flex'
     }
-    
