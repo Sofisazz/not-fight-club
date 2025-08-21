@@ -14,8 +14,8 @@ function toFight(){
     character_section.style.display='none';
     battle_section.style.display='none'
     settings_section.style.display='none';
-} else alert('Write Character Name');
-    }
+    } else alert('Write Character Name');
+}
 
 function toCharacter(){
     fight_section.style.display='none';
