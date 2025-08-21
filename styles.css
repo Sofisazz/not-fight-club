@@ -27,6 +27,11 @@ header {
   box-sizing: border-box;
   border-bottom: 2px solid black;
 }
+
+.tool-bar img{
+  cursor: pointer;
+}
+
 .main {
   align-items: center;
   display: flex;
