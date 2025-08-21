@@ -189,56 +189,56 @@
                                 <p>Attack Zones</p>
                                 <div class="checkbox-container">
                                     <label for="check-head">Head</label>
-                                    <input type="radio" name="head" id="check-head">
+                                    <input type="radio" name="head" class="my-attack input-attack" id="check-head">
                                 </div>
                                 <div class="checkbox-container">
                                     <label for="check-neck">Neck</label>
-                                    <input type="radio" name="neck" id="check-neck">
+                                    <input type="radio" class="my-attack input-attack" name="neck" id="check-neck">
                                 </div>
                                 <div class="checkbox-container">
                                     <label for="check-body">Body</label>
-                                    <input type="radio" name="body" id="check-body">
+                                    <input type="radio" class="my-attack input-attack" name="body" id="check-body">
                                 </div>
                                 <div class="checkbox-container">
                                     <label for="check-belly">Belly</label>
-                                    <input type="radio" name="belly" id="check-belly">
+                                    <input type="radio" class="my-attack input-attack" name="belly" id="check-belly">
                                 </div>
                                 <div class="checkbox-container">
                                     <label for="check-legs">Legs</label>
-                                    <input type="radio" name="legs" id="check-legs">
+                                    <input type="radio" class="my-attack input-attack" name="legs" id="check-legs">
                                 </div>
                             </div>
                             <div class="hr"></div>
                             <div class="defence-zones">
                                 <p>Defence Zones</p>
                                 <div class="checkbox-container">
-                                    <input type="radio" name="head-enemy" id="check-head">
+                                    <input type="radio" name="head-enemy" class="enemy-attack input-attack" id="check-head">
                                     <label for="check-head">Head</label>
 
                                 </div>
                                 <div class="checkbox-container">
-                                    <input type="radio" name="neck-enemy" id="check-neck">
+                                    <input type="radio" name="neck-enemy" class="enemy-attack input-attack" id="check-neck">
                                     <label for="check-neck">Neck</label>
 
                                 </div>
                                 <div class="checkbox-container">
-                                    <input type="radio" name="body-enemy" id="check-body">
+                                    <input type="radio" name="body-enemy" class="enemy-attack input-attack" id="check-body">
                                     <label for="check-body">Body</label>
 
                                 </div>
                                 <div class="checkbox-container">
-                                    <input type="radio" name="belly-enemy" id="check-belly">
+                                    <input type="radio" name="belly-enemy" class="enemy-attack input-attack" id="check-belly">
                                     <label for="check-belly">Belly</label>
 
                                 </div>
                                 <div class="checkbox-container">
-                                    <input type="radio" name="legs-enemy" id="check-legs">
+                                    <input type="radio" name="legs-enemy" class="enemy-attack input-attack" id="check-legs">
                                     <label for="check-legs">Legs</label>
 
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-attack">Attack!</button>
+                        <button class="btn-attack" id="btn-attack" onclick="attack()">Attack!</button>
                     </div>
                     <div class="battle-item">
                         <p class="battle-item-name">Spacemarine</p>
