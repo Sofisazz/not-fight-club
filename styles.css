@@ -388,14 +388,16 @@ a {
 }
 
 .btn-attack {
+  opacity: 0.5;
   align-items: center;
   border: 1px solid #000;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: not-allowed;
   display: flex;
   font-size: 16px;
   justify-content: center;
   padding: 10px 20px;
+}
 /*-------------- settings ---------------------*/
 
 #settings-section {
