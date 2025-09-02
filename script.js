@@ -120,15 +120,29 @@ function closeModal(){
 
     
         
- document.querySelector('.input-attack').addEventListener('click',
+ document.querySelectorAll('.input-attack').forEach(()=>addEventListener('click',
     function attack(){
         let my_attack=document.querySelectorAll('.my-attack:checked').length;
         let enemy_attack=document.querySelectorAll('.enemy-attack:checked').length;
         let btn_attack=document.querySelector('.btn-attack');
 
-        if(my_attack != 1 || enemy_attack!=2){
+        if(my_attack == 1 && enemy_attack == 2){
+            btn_attack.style.cursor='cursor';
+            btn_attack.style.opacity='1';
+        } else {
             btn_attack.style.cursor='not-allowed';
             btn_attack.style.opacity='0.5';
         }
+         
        
-    })
+    }));
+
+    document.querySelectorAll('.input-attack').forEach(radio => {
+        radio.addEventListener('click', function(){
+            if(!this.checked){
+                this.checked=false;
+            }
+        })
+    }
+
+    );
